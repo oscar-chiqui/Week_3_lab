@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Feedback</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Goofle font link to apply in css -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap and css links to apply styles for the student feedback. -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="feedback_styles.css" type="text/css">
+
+</head>
+
+<body class="m-3">
+
+<div class="jumbotron">
+  <h1>Please provide feedback. You may do so anonymously.</h1>
+</div>
+<!-- The textarea id=comments and class:form-control is required . -->
+
+<form class="ml-5 mr-5">
+  <label for="name">Name:</label> <input id="name" class="form-control"  type="text"><br>
+  <label for="email">Email:</label> <input id="email" class="form-control"  type="email"><br>
+  <label for="comments">Comments:</label> <br>
+  <textarea id="comments" class="form-control" required></textarea><br>
+
+  <p class="form-text">Are you a current student?</p>
+
+<!-- To keep the check on Yes , I use checked for input name=current-student id=yes class=form-check-input type=radio checked> -->
+
+  <div class="form-check">
+    <input name="current-student" id="yes" class="form-check-input" type="radio" checked>
+    <label for="yes"  class="form-check-label">Yes</label>
+  </div>
+  <div class="form-check">
+    <input name="current-student" id="no" class="form-check-input" type="radio">
+    <label for="no"  class="form-check-label" >No</label>
+  </div>
+
+<!-- The submit bottom  -->
+  <div>
+    <input class="btn btn-primary mt-2" type="submit">
+  </div>
+
+</form>
+
+</body>
+</html>

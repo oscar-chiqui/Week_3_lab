@@ -1,0 +1,27 @@
+h1{
+    background-color: burlywood;
+    background-size: 4opx;
+    
+}
+
+#test-only {
+    background-color: whitesmoke;
+    height: fit-content;
+    margin: auto;
+    border: 0in;
+    padding: auto;
+    font-size: larger;
+}
+ /* La imagen da un fondo más realista a la página. */
+body {
+    background-image: url(114-1147613_in-coordination-emergency-alert-system-logo.png);
+}
+/* The alert message is displayed to send the alert. */
+#real-alert {
+    background-color: orange;
+
+}
+
+P {
+    font-size: large;
+}

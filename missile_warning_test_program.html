@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Missile Alert Site</title>
+
+  <!-- CSS to apply in HTML -->
+  <link rel="stylesheet" href="missile_warning.css">
+</head>
+<body>
+
+<h1>Missile Alerts</h1>
+
+<P><B>Select one of the options to send the alert ? </B></P>
+
+<a id="real-alert" class="missile-link" href="#">Send Missile Alert</a>
+<a id="test-only" class="missile-link" href="#">Send Test Missile Alert</a>
+
+<!-- The script is used to develop the alert on the page in this case, we use the variables let, if, else. -->
+<script>
+    let realAlert = document.querySelector("#real-alert")
+    realAlert.addEventListener('click', function(){
+    let sendalert = confirm('The Alert will be sent, Please Wait !!!')
+    if (sendalert) {
+        alert('Missile Alert Sent!')
+        // TODO actually send alert
+    } else {
+        alert('No alert sent.')
+        // do nothing.
+    }
+})
+</script>
+
+
+
+</body>
+</html>

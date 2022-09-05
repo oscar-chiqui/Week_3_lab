@@ -1,0 +1,18 @@
+/* The jumbotron has background , font styles to modify design */
+
+.jumbotron {
+    background-color: rgb(240, 255, 30);
+    font-family: 'Merriweather', serif;
+font-family: 'Qwitcher Grypen', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* The background image and some styles. */
+body {
+    font-size: xx-large;
+    background-image: url(menfis-galvez-XKhQ3mvgvmU-unsplash.jpg);
+    background-size: cover;
+    font-style: initial;
+}
