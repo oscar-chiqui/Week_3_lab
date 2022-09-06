@@ -1,0 +1,75 @@
+<!-- Oscar Chiqui | Web Client Class - Fall 2022  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conference Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- The bootstrap link  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- The Google font link  -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Qwitcher+Grypen&family=Roboto:wght@100&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+<!-- The css link  -->
+    <link rel="stylesheet" href="conference.css">
+
+</head>
+<body>
+    <!-- The jumbotron | The h1 text and the paragraph -->
+    <div class="jumbotron text-center">
+
+        <h1>Conference Registration Form</h1>
+        
+        <p>Please complete the form and do not leave blank spaces.</p>
+    </div>
+
+<!-- The form collect all the user input (Conference registration form ) -->
+    <form >
+        <label for="name-1">Name:</label><input id="name-1" name="name1" required maxlength="70"><br>
+
+        <label for="password">Password:</label><input id="password" name="password2" required><br>
+
+        <label for="email">Email:</label><input id="email" name="emai3" required><br>
+
+<!-- The select and option for user interaction. -->
+        <p>
+            <label for="t-shirt">What is  your T-shirt size?<br>All attendees receive a free t-shirt.</label>
+            <select id="t-shirt">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </p>
+
+<!-- The type=date  to define a date to pick (year,month and day.) -->
+        <label for="birth-date">Date of Birth:</label><input type="date" id="date1" name="date1" required><br>
+
+        <!-- The radio button to display Yes or No. I use code from examples ( I need more practice because i try to change the id and name class. But the goal: 
+     The buttons should work as radio buttons, selecting one button should deselect the other.)   -->
+        <p> Receive Email updates? from conference sponsors.
+            <input id="coke" name="soda"required type="radio"> <label for="coke">Yes</label>
+            <input id="pepsi" name="soda"required type="radio"> <label for="pepsi">No</label>
+          </p>
+
+<!-- The checkbox type to user interaction -->
+        <p><b>Attendance Time:</b>
+
+            <br> <label for="sure">Morning?</label> <input id="sure" name="sure" type="checkbox">
+            <br> <label for="sure">Afternoon?</label> <input id="sure" name="sure" type="checkbox">
+        </p>
+
+<!-- The textarea 7 rows and 70 columns -->
+        <label for="comments">Special Request (Notes)</label> <br>
+        <textarea id="comments" class="form-control" rows="7" cols="70" required></textarea><br>
+        
+<!-- The submit button with btn btn lg (large ) -->
+        <input class="btn btn-primary btn-lg" type="submit">
+        
+
+    </form>
+    
+</body>
+</html>

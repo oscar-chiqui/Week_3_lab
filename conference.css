@@ -1,0 +1,17 @@
+/* CSS file | conference_registration_form.html */
+body {
+    /* Adding the background image using hex colors */
+    background-image: linear-gradient(#ffd966,#76a5af);
+    text-align: left;
+    font-size: large;
+
+/* Google font link ( css style code )  */
+
+    font-family: 'Merriweather', serif;
+font-family: 'Qwitcher Grypen', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+
