@@ -1,0 +1,16 @@
+.form-field {
+    margin-bottom: 15px;
+}
+
+.jumbotron {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-image: linear-gradient(45deg, #7dadfa, #ded2fa);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
