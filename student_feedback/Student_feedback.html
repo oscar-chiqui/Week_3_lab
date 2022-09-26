@@ -16,37 +16,53 @@
   <link rel="stylesheet" href="feedback_styles.css" type="text/css">
 
 </head>
-
 <body class="m-3">
 
 <div class="jumbotron">
-  <h1>Please provide feedback. You may do so anonymously.</h1>
+    <h1>Please provide feedback. You may do so anonymously.</h1>
 </div>
-<!-- The textarea id=comments and class:form-control is required . -->
 
-<form class="ml-5 mr-5">
-  <label for="name">Name:</label> <input id="name" class="form-control"  type="text"><br>
-  <label for="email">Email:</label> <input id="email" class="form-control"  type="email"><br>
-  <label for="comments">Comments:</label> <br>
-  <textarea id="comments" class="form-control" required></textarea><br>
+<form class="mx-5">
+<!-- The class row is created  -->
+    <div class="row"> 
+<!-- The  class column is created  -->
+        <div class="col-md-5">
+            <div>
+                <p>As one of our students, your money is important to us.</p>
+                <p>Please use this form to send us your feedback.</p>
+                <p>If you would like a response, please include your contact information.</p>
+            </div>
+        </div>
+<!-- inout boxes are created for each label -->
+        <div class="col-md-7">
+            <div>
+                <label for="student-name">Name</label>
+                <input id="student-name" name="name" type="text" class="form-control"><br>
 
-  <p class="form-text">Are you a current student?</p>
+                <label for="student-email">Email</label>
+                <input id="student-email" name="email" type="email" class="form-control"><br>
 
-<!-- To keep the check on Yes , I use checked for input name=current-student id=yes class=form-check-input type=radio checked> -->
+<!-- The text area is created with a required class for user interaction  -->
+                <label for="student-comments">Comments</label><br>
+                <textarea id="student-comments" rows="4" cols="30" name="comments" required class="form-control"></textarea>
+            </div>
 
-  <div class="form-check">
-    <input name="current-student" id="yes" class="form-check-input" type="radio" checked>
-    <label for="yes"  class="form-check-label">Yes</label>
-  </div>
-  <div class="form-check">
-    <input name="current-student" id="no" class="form-check-input" type="radio">
-    <label for="no"  class="form-check-label" >No</label>
-  </div>
-
-<!-- The submit bottom  -->
-  <div>
-    <input class="btn btn-primary mt-2" type="submit">
-  </div>
+            <div id="current-student-section">
+                <p id="current-student-text">Are you a current student?</p>
+                <div class="form-check">
+                    <input id="yes-button" name="current-student" type="radio" class="form-check-input" checked>
+                    <label for="yes-button" class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input id="no-button" name="current-student" type="radio" class="form-check-input">
+                    <label for="no-button" class="form-check-label">No</label><br>
+                </div>
+            </div>
+            
+<!-- The button submit using the the bootstrap success " https://getbootstrap.com/docs/4.1/components/buttons/"  -->
+            <input type="submit" class="btn btn-success mt-4">
+        </div>
+    </div>
 
 </form>
 

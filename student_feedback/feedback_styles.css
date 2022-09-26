@@ -11,8 +11,8 @@ font-family: 'Ubuntu', sans-serif;
 
 /* The background image and some styles. */
 body {
-    font-size: xx-large;
-    background-image: url(menfis-galvez-XKhQ3mvgvmU-unsplash.jpg);
+    font-size: large;
+    background-color: beige;
     background-size: cover;
     font-style: initial;
 }
