@@ -1,5 +1,5 @@
 h1{
-    background-color: burlywood;
+    background-color: red;
     background-size: 4opx;
     
 }
@@ -12,9 +12,9 @@ h1{
     padding: auto;
     font-size: larger;
 }
- /* La imagen da un fondo más realista a la página. */
+ /* Background  */
 body {
-    background-image: url(114-1147613_in-coordination-emergency-alert-system-logo.png);
+    background: bisque;
 }
 /* The alert message is displayed to send the alert. */
 #real-alert {
